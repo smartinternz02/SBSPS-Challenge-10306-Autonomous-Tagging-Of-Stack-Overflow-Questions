@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Tagging</title>
+</head>
+<body>
+    <h1>Input your question and select relevant tags</h1>
+    <form method="POST">
+        <label for="question">Question:</label><br>
+        <textarea name="question" rows="4" cols="50"></textarea><br>
+
+        <label for="tags">Select relevant tags:</label><br>
+        {% for tag in tags_list %}
+            <input type="checkbox" name="tags" value="{{ tag }}"> {{ tag }}<br>
+        {% endfor %}
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
