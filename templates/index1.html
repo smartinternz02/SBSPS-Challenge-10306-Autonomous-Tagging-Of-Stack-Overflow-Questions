@@ -1,0 +1,18 @@
+<!-- templates/index1.html -->
+{% extends 'base1.html' %}
+
+{% block content %}
+    <h1>Questions</h1>
+    <ul class="question-list">
+        {% for question in questions %}
+            <li>
+                <a href="{{ url_for('question', question_id=question['id']) }}">{{ question['title'] }}</a>
+                <div class="tags">
+                    {% for tag in question['tags'] %}
+                        <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

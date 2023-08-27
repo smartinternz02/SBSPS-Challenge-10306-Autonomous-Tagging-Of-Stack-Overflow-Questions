@@ -1,0 +1,12 @@
+<!-- templates/question1.html -->
+{% extends 'base1.html' %}
+
+{% block content %}
+    <h1>{{ question['title'] }}</h1>
+    <p>{{ question['content'] }}</p>
+    <div class="tags">
+        {% for tag in question['tags'] %}
+            <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+{% endblock %}
