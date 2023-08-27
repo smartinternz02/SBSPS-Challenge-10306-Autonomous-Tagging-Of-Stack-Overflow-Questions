@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Predefined list of tags
 tags_list = ['python', 'flask', 'web development', 'machine learning', 'data science', 'javascript', 'html', 'css']
 relevant_tag = ["python" , "beginner"]
-
+ 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
