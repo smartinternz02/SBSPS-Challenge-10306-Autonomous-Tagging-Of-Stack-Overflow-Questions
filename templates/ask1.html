@@ -4,12 +4,14 @@
 {% block content %}
 <div class="center-container">
     <h1>Ask a Question</h1>
-
+<div class = "table">
     <div class="dialog">
         <h2>Writing a good question</h2>
         <p>You’re ready to ask a programming-related question and this form will help guide you through the process.</p>
         <p>Looking to ask a non-programming question? See the topics here to find a relevant site.</p>
         <h3>Steps</h3>
+    </div>
+    <div class = "left-container">
         <ol>
             <li>Summarize your problem in a one-line title.</li>
             <li>Describe your problem in more detail.</li>
@@ -18,8 +20,9 @@
             <li>Review your question and post it to the site.</li>
         </ol>
     </div>
-    
-    <form method="post">
+</div>
+    <div class = "div-with-space">
+    <form  method="post">
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" required><br>
 
@@ -28,5 +31,7 @@
 
         <button type="submit">Submit</button>
     </form>
+    </div>
+    
 </div>
 {% endblock %}
