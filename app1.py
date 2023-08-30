@@ -72,5 +72,3 @@ def ask():
         return redirect(url_for('index'))
     return render_template('ask1.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
