@@ -25,31 +25,18 @@
         background-image: url("{{ url_for('static', filename='background-image.jpg') }}");
         background-size: cover; /* Adjust the image size to cover the whole body */
         background-repeat: no-repeat;
+        
     }
 </style>
 
 <body>
     
     <header class="stack-header">
-        <!--<nav class="navbar">
-            <a href="{{ url_for('index') }}">Home</a>
-           
-            <a href="{{ url_for('ask') }}">Ask a Question</a>
-            <<div class="container header-container">
-                <div class="logo-container">
-                    <a href="{{ url_for('index') }}" class="logo">
-                        <img src="{{ url_for('static', filename='stackoverflow-logo.png') }}" alt="Stack Overflow Logo"/>
-                    </a>
-                    <span class="separator"></span>
-                </div class="app-title">
-        
-        </nav>-->
         <nav>
-            <ul class="nav-bar">
+            <ul class="nav-bar"><div>
                 <a href="{{ url_for('index') }}" class="logo">
                     <img src="{{ url_for('static', filename='stackoverflow-logo.png') }}" alt="Stack Overflow Logo"/>
                 </a>
-              <li><a  href="{{ url_for('index') }}">Home</a></li>
               <li><a href="{{ url_for('ask') }}">Ask a Question</a></li>
               
             </ul>

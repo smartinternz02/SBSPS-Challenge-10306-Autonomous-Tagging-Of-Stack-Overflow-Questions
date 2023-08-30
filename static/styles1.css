@@ -46,19 +46,24 @@ background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,115,121,0.533704
 .nav-bar {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 75;
 }
 
 .nav-bar li {
-    display: inline;
+    display:inline-table;
     font-size: 20px;
     padding: 15px;
+    padding-bottom: 5px;
+  
+}
+.nav-bar nav {
+    justify-content: center;
 }
 
 /* Hide the list-style-type and margin for the navbar */
 .nav-bar {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,115,121,0.5337046827794563) 35%, rgba(2,0,36,1) 97%);
+    background: rgb(244,130,36);
+background: linear-gradient(90deg, rgba(244,130,36,1) 0%, rgba(244,176,80,1) 41%, rgba(255,212,81,1) 91%);
     color: white;
     padding: 1rem;
     list-style-type: none;
@@ -70,9 +75,10 @@ background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,115,121,0.533704
     text-decoration: none;
     color: white;
     padding: 0.5rem 1rem;
-    
+    align-items:center;
     border-radius: 8px;
     transition: background-color 0.3s, color 0.3s;
+    justify-content:center;
 }
 
 .nav-bar a:hover {
@@ -186,6 +192,7 @@ button[type="submit"] {
     height: auto;
     margin:0px;
     padding: 0px;
+
 }
 .app-title {
 font-size: 1.2rem;
@@ -209,17 +216,17 @@ font-size: 1.2rem;
     border: 1px solid black;
     border-collapse: collapse;
     height: 300px;
-    width: 1000px;
+    width: 600px;
+    margin-left: 10px;
 }
 .div-with-space {
     margin-top: 50px;
-    width: 75vw;
+    width: 50vw;
 }
 .input-container {
     display: flex;
     align-items: center; /* Vertically align items */
     margin-bottom: 10px; /* Add space between input containers */
-    width: auto;
 }
 
 .input-with-button {
@@ -230,7 +237,7 @@ font-size: 1.2rem;
 .input-with-button input,
 .input-with-button textarea {
     margin-left: 30px; /* Add space between input and button */
-    width: 400px;
+    width: 450px;
 }
 
 .microphone-button {
@@ -247,6 +254,53 @@ font-size: 1.2rem;
 .questions:li {
 
 }
+.about-section-center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    height: 10vh;
+    text-align: center;
+}
+}
 
+.about-section-left-container {
+   margin-left: 10px;
+   text-align: left;
+}
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin-top: 25vh;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    
+   
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    text-align: center;
+  }
+  
 
 
