@@ -5,6 +5,8 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer 
 import pickle
 import numpy as np
+from app2 import *
+
 
 app = Flask(__name__)
 
@@ -48,6 +50,14 @@ questions = [
     # Add more questions
 ]
 
+
+@app.route('/background_process_test')
+def background_process_test():
+    print ("Hello")
+    recognize_from_microphone()
+    return ("nothing")
+
+
 @app.route('/')
 
 def index():
@@ -70,6 +80,8 @@ def ask():
             'content': request.form['content'],
             "tags" : get_tag(request.form['content'] + request.form['title'])
         }
+        if request.form['butt'] == 1:
+            recognize_from_microphone()
         questions.append(new_question)
         return redirect(url_for('index'))
     return render_template('ask1.html')

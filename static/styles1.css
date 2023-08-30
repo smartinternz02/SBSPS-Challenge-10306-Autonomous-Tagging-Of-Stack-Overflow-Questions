@@ -1,14 +1,96 @@
 /* static/styles.css */
+* {
+	@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+nav span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 95px;
+	height: 100%;
+	background: linear-gradient(45deg, #085c06, #0dfc05);
+	border-radius: 10px;
+	transition: 0.5s;
+}
 
-.navbar {
-    background-color: #212121;
+nav a:nth-child(1):hover~span
+{
+	left: 0; /* Home */
+}
+nav a:nth-child(2):hover~span
+{
+	left: 95px; /* Twitter */
+}
+
+
+/*.navbar {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,115,121,0.5337046827794563) 35%, rgba(2,0,36,1) 97%);
     color: white;
     padding: 1rem;
+}
+.navbar a {
+    padding-right: 20px;
+    padding-left: 40px;
+}*/
+/* Add this to your existing CSS */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-bar li {
+    display: inline;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* Hide the list-style-type and margin for the navbar */
+.nav-bar {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,115,121,0.5337046827794563) 35%, rgba(2,0,36,1) 97%);
+    color: white;
+    padding: 1rem;
+    list-style-type: none;
+    margin: 0;
+}
+
+/* Add decorative styles for the buttons */
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-bar a:hover {
+    
+    color: rgb(2,0,36);
+}
+
+/* Add hover effect for list items */
+.nav-bar li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1px;
+}
+
+  
+.separator {
+    width: 100px; /* Adjust the width to control the separation */
+    height: 1px; /* You can adjust the height as well */
+    background-color: #ccc; /* Color of the separator */
 }
 
 .container {
@@ -20,10 +102,27 @@ body {
     padding: 0;
 }
 
-.question-list li {
+.question-list .question {
     margin-bottom: 1rem;
+    border: none; /* Remove the border */
+    padding: 0; /* Remove the padding */
+}
+
+.question-list .question a.question-link {
+    display: inline-block;
+     /* Set the background color for the button */
+    padding: 1rem 2rem ; /* Adjust padding for the button */
+    text-decoration: none;
+    color: #333;
     border: 1px solid #ddd;
-    padding: 1rem;
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect for hover */
+    margin-left: 2rem;
+    
+}
+
+.question-list .question a.question-link:hover {
+    background-color: rgb(2, 0, 36); /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
 }
 
 .tags {
@@ -36,6 +135,8 @@ body {
     padding: 0.25rem 0.5rem;
     margin-right: 0.5rem;
     font-size: 0.8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 /* Center-align content */
@@ -81,10 +182,13 @@ button[type="submit"] {
     font-size: 1rem;
 }
 .logo img {
-    width: 100px;
+    width: 130px;
     height: auto;
     margin:0px;
     padding: 0px;
+}
+.app-title {
+font-size: 1.2rem;
 }
 .left-aligned-list {
     list-style-position: inside;
@@ -99,6 +203,7 @@ button[type="submit"] {
     height: 100vh;
     text-align: left;
     margin-bottom: 20px;
+    padding-left: 30px;
 }
 .table {
     border: 1px solid black;
@@ -110,5 +215,38 @@ button[type="submit"] {
     margin-top: 50px;
     width: 75vw;
 }
+.input-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    margin-bottom: 10px; /* Add space between input containers */
+    width: auto;
+}
+
+.input-with-button {
+    display: flex;
+    align-items: center; /* Align input and button vertically */
+}
+
+.input-with-button input,
+.input-with-button textarea {
+    margin-left: 30px; /* Add space between input and button */
+    width: 400px;
+}
+
+.microphone-button {
+    width: 30px;
+    height: 30px;
+    background-image: url('microphone-icon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    
+}
+.questions:li {
+
+}
+
 
 
