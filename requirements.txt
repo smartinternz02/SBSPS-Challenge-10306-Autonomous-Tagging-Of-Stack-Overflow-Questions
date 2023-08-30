@@ -1,2 +1,2 @@
 gradio_client
-flask
+Flask==2.0.2
