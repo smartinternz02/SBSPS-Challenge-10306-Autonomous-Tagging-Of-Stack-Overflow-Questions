@@ -13,7 +13,7 @@
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** Reference links are  in brackets [ ] instead of parentheses ( ).
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
@@ -66,7 +66,6 @@
     <li>
       <a href="#getting-started">Building the Model</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -96,10 +95,11 @@ Enter your question's title and description, and our system will analyze the con
 
 We're dedicated to enhancing your experience on Stack Overflow by streamlining the question-asking process and ensuring that the right audience sees your inquiries.
 </div>
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Top</a>)</p>
 
 
-
+<div align="left">
+  
 ### Built With
 
 These are all the software and libraries we used to make the app and the model.
@@ -111,46 +111,45 @@ These are all the software and libraries we used to make the app and the model.
 ![Static Badge](https://img.shields.io/badge/hugging_face-yellow?logo=hugging%20face)
 ![Static Badge](https://img.shields.io/badge/kaggle-lightblue?logo=kaggle)
 ![Static Badge](https://img.shields.io/badge/JQuery-lightblue?logo=Jquery)
+</div>
+<p align="right">(<a href="#readme-top">Top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
+<div align="left">
+  
 <!-- Building The model -->
 ## Building The Model
 
-We built the model using Python on a Kaggle notebook. We used the [Stack Sample](https://www.kaggle.com/datasets/stackoverflow/stacksample) dataset on Kaggle. The notebooks can be found here. One of the significant challenges in this task was handling many tags in the dataset, where each question can have multiple tags attached to it. Apart from preprocessing, we developed two possible models for our dataset. Our first model uses logistic Regression with a multioutput model to train for the vast number of tags in the model. The second model used neural networks. We modified a pretrained Bert model and trained it on our dataset. We reached a plateau on the loss after about 100 epochs, after which it didn't improve any further. We could have improved it further by modifying the final layer; however, taking into account the large number of 
+We built the model using Python on a Kaggle notebook. We used the [Stack Sample](https://www.kaggle.com/datasets/stackoverflow/stacksample) dataset on Kaggle. The notebooks can be found here. One of the significant challenges in this task was handling many tags in the dataset, where each question can have multiple tags attached to it. Apart from preprocessing, we developed two possible models for our dataset. Our first model uses logistic Regression with a multioutput model to train for the vast number of tags in the model. The second model used neural networks. We modified a pretrained Bert model and trained it on our dataset. We reached a plateau on the loss after about 100 epochs, after which it didn't improve further. We could have improved it further by modifying the final layer; however, taking into account the large file size that will be generated, we kept an upper limit on the size of the model
+</div>
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
+<div align="left">
+  
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ``` js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+You need to install the following code to build and use the code.
+  
+* Cloning the repository
+  ```sh
+  git clone https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions.git
+  ```
+* Go to the directory 
+  ```sh
+  cd SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions
+  ```
+* Installing all the requirements
+  ```sh
+  pip install -r requirements.txt
+  ```
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
+<div align="left">
+  
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -158,8 +157,15 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+* Run the command on your terminal
+  ```sh
+  flask run
+  ```
 
 
 <!-- ROADMAP -->
@@ -175,7 +181,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Top</a>)</p>
 
 
 
@@ -202,7 +208,7 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Top</a>)</p>
 
 
 
