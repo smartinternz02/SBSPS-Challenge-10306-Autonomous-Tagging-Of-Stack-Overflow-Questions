@@ -1,9 +1,9 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<!-- Improved compatibility of back-to-top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
+*** Thanks for checking out the Best-README template. If you have a suggestion
+*** That would make this better; please fork the repo and create a pull request
+*** or open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
@@ -64,7 +64,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Building the Model</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -85,41 +85,41 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+<div align="left">
+Welcome to our innovative project! We're excited to introduce an autonomous tagger for questions on Stack Overflow.
 
-There are [8,000 questions asked by developers every day on StackOverflow](https://stackoverflow.blog/2017/05/09/introducing-stack-overflow-trends/#:~:text=On%20a%20typical%20day%2C%20developers,run%20into%20in%20their%20work.) these question range from students to professional software developers. A large number of these questions go unanswered due to the use of improper tags in the questions mostly from junior developers. Our aim with this app is to automate the use of the tags with a special focus on the popular tags that are used in the industry.
+There are [8,000 questions asked by developers every day on StackOverflow](https://stackoverflow.blog/2017/05/09/introducing-stack-overflow-trends/#:~:text=On%20a%20typical%20day%2C%20developers,run%20into%20in%20their%20work.) these question range from students to professional software developers. Many of these questions go unanswered due to improper tags in the questions, mostly from junior developers. Our aim with this app is to automate the use of the tags with a particular focus on the popular tags used in the industry.
 
+Our solution leverages advanced AI techniques to automatically suggest relevant tags for your questions, making getting quick and accurate answers easier.
 
+Enter your question's title and description, and our system will analyze the content and propose appropriate tags. This helps ensure that your question reaches the right experts in the community, maximizing the chances of receiving valuable responses.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
+We're dedicated to enhancing your experience on Stack Overflow by streamlining the question-asking process and ensuring that the right audience sees your inquiries.
+</div>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+These are all the software and libraries we used to make the app and the model.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+![Static Badge](https://img.shields.io/badge/Flask-blue?logo=Flask)
+![Static Badge](https://img.shields.io/badge/Gradio-yellow?logo=gradio)
+![Static Badge](https://img.shields.io/badge/pytorch-orange?logo=pytorch)
+</br>
+![Static Badge](https://img.shields.io/badge/hugging_face-yellow?logo=hugging%20face)
+![Static Badge](https://img.shields.io/badge/kaggle-lightblue?logo=kaggle)
+![Static Badge](https://img.shields.io/badge/JQuery-lightblue?logo=Jquery)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Building The model -->
+## Building The Model
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+We built the model using Python on a Kaggle notebook. We used the [Stack Sample](https://www.kaggle.com/datasets/stackoverflow/stacksample) dataset on Kaggle. The notebooks can be found here. One of the significant challenges in this task was handling many tags in the dataset, where each question can have multiple tags attached to it. Apart from preprocessing, we developed two possible models for our dataset. Our first model uses logistic Regression with a multioutput model to train for the vast number of tags in the model. The second model used neural networks. We modified a pretrained Bert model and trained it on our dataset. We reached a plateau on the loss after about 100 epochs, after which it didn't improve any further. We could have improved it further by modifying the final layer; however, taking into account the large number of 
 
 ### Prerequisites
 
@@ -143,7 +143,7 @@ _Below is an example of how you can instruct your audience on installing and set
    npm install
    ```
 4. Enter your API in `config.js`
-   ```js
+   ``` js
    const API_KEY = 'ENTER YOUR API';
    ```
 
@@ -182,9 +182,9 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion to improve this, please fork the repo and create a pull request. You can also open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
