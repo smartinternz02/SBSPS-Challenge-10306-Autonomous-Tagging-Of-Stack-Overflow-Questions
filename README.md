@@ -30,31 +30,32 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions)">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Autonomous Tagging</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Elevating Stack Overflow's Effectiveness Through Autonomous Tagging
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://researchengines.azurewebsites.net/">Live Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Demo Video</a>
+    ·<!--
+    *** <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    >
   </p>
 </div>
 
 
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
+<details align="left">
+  <summary align="center">Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
