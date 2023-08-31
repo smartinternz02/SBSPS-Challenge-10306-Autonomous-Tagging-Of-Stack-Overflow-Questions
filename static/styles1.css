@@ -47,6 +47,7 @@ background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,115,121,0.533704
     position: sticky;
     top: 0;
     z-index: 75;
+    border-bottom: #333;
 }
 
 .nav-bar li {
@@ -73,7 +74,7 @@ background: linear-gradient(90deg, rgba(244,130,36,1) 0%, rgba(244,176,80,1) 41%
 /* Add decorative styles for the buttons */
 .nav-bar a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 0.5rem 1rem;
     align-items:center;
     border-radius: 8px;
@@ -83,7 +84,7 @@ background: linear-gradient(90deg, rgba(244,130,36,1) 0%, rgba(244,176,80,1) 41%
 
 .nav-bar a:hover {
     
-    color: rgb(2,0,36);
+    color: rgb(251, 251, 255);
 }
 
 /* Add hover effect for list items */
@@ -262,7 +263,7 @@ font-size: 1.2rem;
     height: 10vh;
     text-align: center;
 }
-}
+
 
 .about-section-left-container {
    margin-left: 10px;
@@ -302,5 +303,7 @@ font-size: 1.2rem;
     text-align: center;
   }
   
-
-
+  .bord {
+    border-top: #333;
+    border-radius: 2px;
+  }

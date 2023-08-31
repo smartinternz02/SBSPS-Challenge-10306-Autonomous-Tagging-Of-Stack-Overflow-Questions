@@ -1,13 +1,14 @@
 <!-- templates/base1.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
     <title>Stack Overflow-like App</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type=text/javascript>
+    <script type=text/javascript>
         $(function() {
           $('button#test').on('click', function(e) {
             e.preventDefault()
@@ -22,34 +23,33 @@
 </head>
 <style>
     body {
-        background-image: url("{{ url_for('static', filename='background-image.jpg') }}");
-        background-size: cover; /* Adjust the image size to cover the whole body */
-        background-repeat: no-repeat;
-        
+        background: linear-gradient(280deg, rgba(244, 130, 36, 1) 0%, rgba(244, 176, 80, 1) 41%, rgba(255, 212, 81, 1) 91%);
+        background-size: cover;
+
+    }
+    .bord {
+        border-bottom:2.5px solid black;
+    }
+    .to {
+        margin:25px;
     }
 </style>
 
 <body>
-    
-    <header class="stack-header">
-        <nav>
-            <ul class="nav-bar"><div>
-                <a href="{{ url_for('index') }}" class="logo">
-                    <img src="{{ url_for('static', filename='stackoverflow-logo.png') }}" alt="Stack Overflow Logo"/>
-                </a>
-              <li><a href="{{ url_for('ask') }}">Ask a Question</a></li>
-              
+        <nav class = "bord">
+            <ul class="nav-bar">
+                <div><a href="{{ url_for('index') }}">
+                            <img src="{{ url_for('static', filename='stackoverflow-logo.png') }}"
+                                alt="Stack Overflow Logo" height= "25vh"/>
+                        </a>
+                    <li><a href="{{ url_for('ask') }}">Ask a Question</a></li>
+
             </ul>
-            </nav><br>
-       
-            <h2 >Elevating Stack Overflow's Effectiveness Through Autonomous Tagging</h2>
-        </br>
-    </div>
-            </div>
-    </header>
-    
-    <div class="container">
+        </nav>
+
+    <div class="container to">
         {% block content %}{% endblock %}
     </div>
 </body>
+
 </html>

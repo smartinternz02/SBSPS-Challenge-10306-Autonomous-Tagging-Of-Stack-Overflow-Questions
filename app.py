@@ -56,7 +56,7 @@ def index():
 def question(question_id):
     question = next((q for q in questions if q['id'] == question_id), None)
     if question:
-        print(question["tags"])
+        print(len(question["tags"]))
         return render_template('question1.html', question=question)
     return "Question not found"
 
@@ -70,10 +70,11 @@ def ask():
             'content': request.form['content'],
             "tags" : get_tag(request.form['content'] + request.form['title'])
         }
+        if len(new_question["tags"]) == 0:
+            render_template('ask1.html' , error = "Your question body does not contain any information ")
         questions.append(new_question)
         return redirect(url_for('index'))
     return render_template('ask1.html')
 
 if __name__ == "__main__":
-    from waitress import serve
-    serve(app, host="0.0.0.0", port=5000)
+    app.run(debug=True)
