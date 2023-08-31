@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions">
-    <img src="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions/blob/b582f4f36ade4947bca1b033e1382ee349536f41/images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions/blob/b582f4f36ade4947bca1b033e1382ee349536f41/images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Autonomous Tagging</h3>
