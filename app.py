@@ -70,8 +70,6 @@ def ask():
             'content': request.form['content'],
             "tags" : get_tag(request.form['content'] + request.form['title'])
         }
-        if len(new_question["tags"]) == 0:
-            render_template('ask1.html' , error = "Your question body does not contain any information ")
         questions.append(new_question)
         return redirect(url_for('index'))
     return render_template('ask1.html')
