@@ -30,8 +30,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions)">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions">
+    !["Reasearch Engines"]("images/logo.png")
   </a>
 
   <h3 align="center">Autonomous Tagging</h3>
