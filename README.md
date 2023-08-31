@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions">
-    <img src="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions/blob/a72093a9e84f0aaeafe8142e8be2adb8d2865e5b/images/logo.png" alt="Logo">
+    <img src="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions/blob/master/images/logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Autonomous Tagging</h3>
@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions/blob/a72093a9e84f0aaeafe8142e8be2adb8d2865e5b/images/Screenshot%202023-08-31%20194258.png" alt="Logo">
+<img src="https://github.com/smartinternz02/SBSPS-Challenge-10306-Autonomous-Tagging-Of-Stack-Overflow-Questions/blob/8ec0a4c0c75d5d652e084750eb8cd7e5855d2696/images/Screenshot%202023-08-31%20194258.png" alt="Logo">
 <div align="left">
 Welcome to our innovative project! We're excited to introduce an autonomous tagger for questions on Stack Overflow.
 
