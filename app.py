@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for
 import pickle
 import numpy as np
 from gradio_client import Client
+import warnings
+warnings.filterwarnings("ignore")
 
 client = Client("https://keeganfdes-stack-onnx.hf.space/")
 
@@ -72,5 +74,6 @@ def ask():
         return redirect(url_for('index'))
     return render_template('ask1.html')
 
-if __name__ == '__main__':
-   app.run()
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=5000)
