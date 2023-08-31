@@ -46,7 +46,7 @@
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Demo Video</a>
     ·<!--
-    *** <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    *** <a href="https://docs.google.com/presentation/d/19iOE6kcStD0LpSkyi27IhWHYF_J2RpAwxLAS0Hz97ug/edit?usp=sharing">Presentation</a>
     >
   </p>
 </div>
