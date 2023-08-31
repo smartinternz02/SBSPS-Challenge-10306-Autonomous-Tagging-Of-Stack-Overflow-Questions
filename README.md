@@ -44,7 +44,7 @@
     <br />
     <a href="https://researchengines.azurewebsites.net/">Live Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Video Presentation</a>
+    <a href="https://drive.google.com/file/d/1o_xU8GcpNILFlGJ3lgklm-Bw5axFD1L2/view?usp=sharing">Video Presentation</a>
     ·
     <a href="https://docs.google.com/presentation/d/19iOE6kcStD0LpSkyi27IhWHYF_J2RpAwxLAS0Hz97ug/edit?usp=sharing">Presentation</a>
     
@@ -193,30 +193,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+IBM X Smartinterz
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
